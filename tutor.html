@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trainers - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<script>
+    // Function to set the cookie
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    // Function to get the cookie
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Function to register user
+    function registerUser() {
+      var name = document.getElementById("name").value;
+      var phoneNumber = document.getElementById("phoneNumber").value;
+      var dropdown = document.getElementById("dropdown").value;
+
+      // Set user information as cookie
+      setCookie("name", name, 30);
+      setCookie("phoneNumber", phoneNumber, 30);
+      setCookie("dropdown", dropdown, 30);
+
+      alert("Registration successful!");
+    }
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="" class="img-fluid"><a href="index.html">YL Edu</a></h1>
+            
+            
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutor.html">Tutors</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+  <main id="main" data-aos="fade-in">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <h1>Our Tutor</h1>
+        <p>Our tutors are highly qualified and have a wealth of experience in teaching various subjects, including math, Chinese, English, and more. They are passionate about education and committed to helping students excel in their studies. Our tutors not only possess in-depth subject knowledge, but they also use innovative teaching techniques to make learning enjoyable and engaging.. </p>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+     <!-- ======= Tutor Section ======= -->
+    <section id="tutor" class="tutor">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_1.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Yu Ting, Chen</h2>
+
+                <span>Chinese</span>
+                <p>
+                   With over 5 years of experience in teaching Mandarin in YL EDU, I'm here to help you unlock and improvise the beauty and complexity of the Chinese language.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_2.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Sarah Amina</h2>
+                <span>Malay</span>
+                <p>
+                  Dedicated and experienced Malay language tuition teacher. With 5 years of teaching experience in YL EDU, I have helped numerous students improve their Malay language skills and excel in their studies.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_3.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Aarya a/p Suranchi</h2>
+                <span>Math</span>
+                <p>
+                  Passionate about helping students improve their math skills and achieve their academic goals. My approach focuses on providing clear explanations, engaging in interactive learning, and tailoring lessons to each student's individual needs.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+	</div>
+	
+     <div class="row" data-aos="zoom-in" data-aos-delay="100">
+	<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_4.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Beatrice Elysha</h2>
+                <span>English</span>
+                <p>
+                   Passion for teaching English and helping students develop their language skills. With 6 years of experience in tutoring in YL EDU.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+	<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_5.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>William Lee</h2>
+                <span>History</span>
+                <p>
+                  With 8 of experience in teaching History in YL EDU, instill in my students a deep understanding of the world's history, and to develop their critical thinking and analytical skills. 
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+	  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_6.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Carl Anderson</h2>
+                <span>Account</span>
+                <p>
+                   An Experienced tutor with a specialization in Accounting. I have been teaching Accounting for 8 at various tuition centers, and I am passionate about helping students excel in this subject
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="row" data-aos="zoom-in" data-aos-delay="100">
+	<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_7.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Lee Jing En</h2>
+                <span>Additional Mathematics</span>
+                <p>
+                      An experienced tutor specializing in additional mathematics. With a strong background in mathematics and years of teaching experience, I am passionate about helping students understand and excel in additional mathematics. I have been teaching for more than 20 years.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+	<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_8.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Lesnar Ooi</h2>
+                <span>Comprehension</span>
+                <p>
+                  An experienced tutor with a passion for teaching comprehension skills. I have been teaching at YL EDU tuition centers for 4 years, and I have a strong track record of helping students improve their reading comprehension abilities.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+	  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/tutor/tutor_9.jpg" class="img-fluid" alt="" >
+              <div class="member-content">
+                <h2>Muhamad Ali</h2>
+                <span>Science</span>
+                <p>
+                  Highly experienced and passionate science tutor with 4 years of teaching experience at YL EDU tuition centers. I am deeply knowledgeable in subjects such as physics, chemistry, and biology. 
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+<div class="breadcrumbs">
+      <div class="container mt-5">
+    <h1 class="text-center mb-4">Registration Form</h1>
+        <form>
+      <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name">
+      </div>
+	<br>
+      <div class="form-group">
+        <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" required
+          placeholder="Enter your phone number">
+      </div>
+	<br>
+      <div class="form-group">
+        <select id="dropdown" name="dropdown" class="form-control" required>
+          <option value="">-- Select an interest Subject --</option>
+          <option value="option1">Chinese</option>
+          <option value="option2">Malay</option>
+          <option value="option3">Math</option>
+          <option value="option4">English</option>
+          <option value="option5">History</option>
+          <option value="option6">Account</option>
+          <option value="option7">Additional Mathmethics</option>
+          <option value="option8">Comprehension</option>
+          <option value="option9">Science</option>
+        </select>
+      </div>
+	<br>
+      <button type="button" class="btn btn-primary" onclick="registerUser()">Register</button>
+    </form>
+  </div>
+
+    </section><!-- End Tutor Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h2>YL EDU</h2>
+            <p>
+              4562,  <br>
+              Jalan Iris 23, <br>
+              Indahpura, Kulai,  <br>
+	      Malaysia 535022 <br> 
+              
+            </p>
+          </div>
+	  <div class="col-lg-3 col-md-6 footer-contact">
+		<strong>Phone:</strong> 011-2667 6166<br>
+              	<strong>Email:</strong> yl.edu4562@gmail.com<br>
+	  </div>
+       
+    <div class="col-lg-3 col-md-6 footer-contact">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>YL EDU</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+<!-- Dark Mode -->
+    
+   <button type="button" onclick="themeToggle()">Theme Toggle</button>
+   <div id="theme"></div>
+   <style>
+       body {
+         background-color: white;
+         color: black;
+       }
+       
+       .dark-mode {
+         background-color: black;
+         color: white;
+       }
+       </style>
+<script>
+   // On page load set the theme.
+(function() {
+ let onpageLoad = localStorage.getItem("theme") || "";
+ let element = document.body;
+ element.classList.add(onpageLoad);
+ document.getElementById("theme").textContent =
+   localStorage.getItem("theme") || "light";
+})();
+
+function themeToggle() {
+ let element = document.body;
+ element.classList.toggle("dark-mode");
+
+ let theme = localStorage.getItem("theme");
+ if (theme && theme === "dark-mode") {
+   localStorage.setItem("theme", "");
+ } else {
+   localStorage.setItem("theme", "dark-mode");
+ }
+
+ document.getElementById("theme").textContent = localStorage.getItem("theme");
+}
+</script>
+</body>
+
+</html>
