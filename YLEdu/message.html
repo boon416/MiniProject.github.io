@@ -63,12 +63,12 @@
                     <div class="form-group">
                         <label for="email">Email address</label>
                         <input type="email" class="form-control"
-                               id="FormControlInputEmail" placeholder="Your Email"><br>
+                               id="Email" placeholder="Your Email"><br>
                     </div>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control"
-                               id="FormControlInputName" placeholder="Your Name"><br>
+                               id="Name" placeholder="Your Name"><br>
                     </div>
                     <div class="form-group">
                         <label for="courseselect">Course select</label>
@@ -93,8 +93,8 @@
             <script>
                 function submitForm() {
                 // Retrieve input values
-                const email = document.getElementById("FormControlInputEmail").value;
-                const name = document.getElementById("FormControlInputName").value;
+                const email = document.getElementById("Email").value;
+                const name = document.getElementById("Name").value;
                 const course = document.getElementById("courseSelect").value;
                 const message = document.getElementById("message").value;
 
@@ -108,8 +108,8 @@
                 alert("Your message has been sent!");
 
                 // Clear form inputs
-                document.getElementById("FormControlInputEmail").value = "";
-                document.getElementById("FormControlInputName").value = "";
+                document.getElementById("Email").value = "";
+                document.getElementById("Name").value = "";
                 document.getElementById("courseSelect").value = "";
                 document.getElementById("message").value = "";
                 }
