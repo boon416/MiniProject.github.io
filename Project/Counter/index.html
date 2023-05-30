@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>野王计时器</title>
+    <style>
+        .timer-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .timer {
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+        #timer1FinishText {
+            font-size: 36px; /* Change the font size as desired */
+        }
+        #timer2FinishText {
+            font-size: 36px; /* Change the font size as desired */
+        }
+        #timer3FinishText {
+            font-size: 36px; /* Change the font size as desired */
+        }
+    </style>
+    <script>
+        function startTimer1() {
+        var timer1 = document.getElementById("timer1");
+        var finishText1 = document.getElementById("timer1FinishText");
+        var count1 = 100;
+
+        var interval1 = setInterval(function() {
+        count1--;
+        timer1.innerHTML = count1;
+
+        timer1.style.fontSize = '36px';
+
+        if (count1 === 0) {
+        clearInterval(interval1);
+        finishText1.innerHTML = "蓝Buff已刷新!";
+        }
+        }, 1000);
+
+        // Clear the finish text when starting the timer again
+        finishText1.innerHTML = "";
+        }
+
+        function startTimer2() {
+        var timer2 = document.getElementById("timer2");
+        var finishText2 = document.getElementById("timer2FinishText");
+        var count2 = 100;
+
+        var interval2 = setInterval(function() {
+        count2--;
+        timer2.innerHTML = count2;
+
+        timer2.style.fontSize = '36px';
+
+        if (count2 === 0) {
+        clearInterval(interval2);
+        finishText2.innerHTML = "红Buff已刷新!";
+        }
+        }, 1000);
+
+        // Clear the finish text when starting the timer again
+        finishText2.innerHTML = "";
+        }
+
+        function startTimer3() {
+        var timer3 = document.getElementById("timer3");
+        var finishText3 = document.getElementById("timer3FinishText");
+        var count3 = document.getElementById("timer3Select").value;
+        var buttonImage = document.getElementById("timer3ButtonImage");
+
+        var interval3 = setInterval(function() {
+        count3--;
+        timer3.innerHTML = count3;
+
+        timer3.style.fontSize = '36px';
+
+        if (count3 === 0) {
+        clearInterval(interval3);
+        finishText3.innerHTML = "技能已刷新!";
+        }
+        }, 1000);
+
+        // Clear the finish text when starting the timer again
+        finishText3.innerHTML = "";
+
+        // Change the button image based on the selected option
+        var selectedOption = document.getElementById("timer3Select");
+        var selectedImage = selectedOption.options[selectedOption.selectedIndex].getAttribute("data-image");
+
+        buttonImage.src = selectedImage;
+        }
+    </script>
+</head>
+<body>
+    <h1>野王计时器</h1>
+    <div class="timer-container">
+        <div class="timer">
+            <img src="button_image1.png" onclick="startTimer1()" alt="Start Timer 1">
+            <p id="timer1" style="font-size: 36px;">100</p>
+            <p id="timer1FinishText"></p>
+        </div>
+        <div class="timer">
+            <img src="button_image2.png" onclick="startTimer2()" alt="Start Timer 2">
+            <p id="timer2" style="font-size: 36px;">100</p>
+            <p id="timer2FinishText"></p>
+        </div>
+    </div>
+    <div class="timer">
+        <h2>召唤师技能</h2>
+        <select id="timer3Select" onchange="updateTimer3ButtonImage()">
+            <option value="30" data-image="buttonT3_image1.png">惩戒</option>
+            <option value="60" data-image="buttonT3_image2.png">终结</option>
+            <option value="60" data-image="buttonT3_image3.png">狂暴</option>
+            <option value="90" data-image="buttonT3_image4.png">疾跑</option>
+            <option value="120" data-image="buttonT3_image5.png">治疗术</option>
+            <option value="60" data-image="buttonT3_image6.png">干扰</option>
+            <option value="90" data-image="buttonT3_image7.png">眩晕</option>
+            <option value="120" data-image="buttonT3_image8.png">净化</option>
+            <option value="90" data-image="buttonT3_image9.png">弱化</option>
+            <option value="120" data-image="buttonT3_image10.png">闪现</option>
+        </select>
+        <img id="timer3ButtonImage" src="button_image3.png" onclick="startTimer3()" alt="Start Timer 3">
+        <p id="timer3"></p>
+        <p id="timer3FinishText"></p>
+    </div>
+</body>
+</html>
