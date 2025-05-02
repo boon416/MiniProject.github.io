@@ -4,9 +4,9 @@ This is my very first project and also my entry point into frontend development.
 
 ## 📁 Project Structure
 
-Inside the `project` folder, you'll find two small sub-projects:
+Inside the `Project` folder, you'll find two small sub-projects:
 
-### 🔢 counter
+### 🔢 Counter
 A mini timer tool built for *Honor of Kings* (王者荣耀) to help players keep track of red/blue buff respawn timings.
 
 ### 🏫 YLEdu
@@ -24,8 +24,8 @@ This site holds sentimental value — it's the very beginning of my web developm
 Visit: [https://boon416.github.io](https://boon416.github.io)
 
 Or navigate directly to:
-- `project/counter/index.html`
-- `project/YLEdu/index.html`
+- `Project/Counter/index.html`
+- `Project/YLEdu/index.html`
 
 ---
 
