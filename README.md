@@ -1,4 +1,4 @@
-# 🌐 boon416.github.io
+# 🌐 MiniProject.github.io
 
 This is my very first project and also my entry point into frontend development. I created this site as a personal playground to explore HTML, CSS, and a bit of JavaScript. It’s hosted using GitHub Pages.
 
